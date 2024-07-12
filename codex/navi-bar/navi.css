@@ -1,0 +1,176 @@
+/* General styling */
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.logo {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 50%; /* Make it circular */
+    margin-left: 10px; /* Adjust margin for spacing */
+}
+
+#menuButton {
+    color: #000000; /* Changed to black */
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+#menuButton i {
+    font-size: 24px;
+    margin-top: 2px; /* Adjusted margin to move it slightly down */
+    color: #000000; /* Changed to black */
+}
+
+#menuButton:focus {
+    outline: none; /* Remove blue focus outline */
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px; /* Adjusted for better spacing */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.form-inline {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for larger screens */
+}
+
+.form-control {
+    width: 100%;
+    padding-left: 45px; /* Increased padding for icon */
+    padding-right: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+.form-control:hover {
+    border-color: #007bff;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-menu-buttons {
+    margin-left: auto;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px; /* Adjust based on your layout */
+    right: 0;
+    width: auto;
+    max-width: 150px; /* Reduced maximum width */
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transform: translateY(10px); /* For animation */
+    opacity: 0; /* For animation */
+}
+
+.dropdown-menu.show {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px; /* Adjusted padding */
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #007bff; /* Hover color */
+}
+
+/* Responsive styling */
+@media (max-width: 1199.98px) {
+    .form-inline {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .form-inline {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    #menuButton {
+        padding-right: 10px;
+    }
+}
+
+.plus-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 5px; /* Optional: slight rounding of the corners */
+    margin-right: 10px; /* Space between icon and profile photo */
+    cursor: pointer;
+}
+
+.plus-icon-wrapper .fas.fa-plus {
+    color: #000000; /* Black plus icon */
+    font-size: 16px; /* Adjusted size */
+}
+
+#profilePhoto {
+    margin-left: 10px; /* Adjust margin for spacing */
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Additional Styling for the container */
+.container.d-flex.flex-column {
+    align-items: center;
+}
+
+.container.d-flex.flex-column .d-flex.w-100 {
+    justify-content: space-between;
+}
